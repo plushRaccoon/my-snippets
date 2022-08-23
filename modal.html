@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="modal.css" />
+    <title>modal window</title>
+  </head>
+  <body>
+    <div class="header__right-block">
+      <button class="btn btn_white" data-modal>Связаться с нами</button>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus expedita ratione nisi ipsa quod doloribus, totam dicta eaque assumenda illum ea delectus repudiandae facere? Ea placeat aliquid dolor quas inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ducimus beatae aspernatur voluptate, explicabo cumque exercitationem voluptatibus quae labore maiores natus architecto ratione, dolore corporis et illo. Dolorem, cupiditate quibusdam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quasi sapiente temporibus, quod quae ad non quia corporis dolorem magnam iste impedit reiciendis magni, exercitationem necessitatibus sed facilis excepturi aliquam.</p>
+    <div class="modal hide">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <form action="#">
+            <div class="modal__close" data-close>&times;</div>
+            <div class="modal__title">
+              Мы свяжемся с вами как можно быстрее!
+            </div>
+            <input
+              required
+              placeholder="Ваше имя"
+              name="name"
+              type="text"
+              class="modal__input"
+            />
+            <input
+              required
+              placeholder="Ваш номер телефона"
+              name="phone"
+              type="phone"
+              class="modal__input"
+            />
+            <button class="btn btn_dark btn_min">Перезвонить мне</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="modal.js"></script>
+  </body>
+</html>
