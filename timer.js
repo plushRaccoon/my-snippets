@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
   function getTimeRemaining(endTime) {
     const t = Date.parse(endTime) - Date.parse(new Date()), // получаем таймстемп текущего состояния в сравнении с дедлайном
       days = Math.floor(t / (1000 * 60 * 60 * 24)),
-      hours = Math.floor((t / (1000 * 60 * 60)) % 24),
+      hours = Math.floor((t / (1000 * 60 * 60)) % 24), // %24 для того чтобы получить в часы не 150, а именно сколько часов в этих сутках осталось до следующих
       minutes = Math.floor((t / 1000 / 60) % 60),
       seconds = Math.floor((t / 1000) % 60);
 
